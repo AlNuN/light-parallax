@@ -6,8 +6,9 @@
         font-size: 20px;
     }
 
-    body main #cards section{
-        width: 350px;
+    body main #cards{
+        grid-template-columns: auto;
+        grid-template-rows: 200px 200px 200px 200px 200px 200px 200px 200px;
     }
 
 }
@@ -18,13 +19,19 @@
         font-size: 20px;
     }
 
-    body main #cards section{
-        width: 350px;
+    body main #cards{
+        grid-template-columns: auto auto;
+        grid-template-rows: 200px 200px 200px 200px;
     }
+
 }
 
 /* Medium devices (tablets, 768px and up)*/
 @media (min-width: 768px) and (max-width: 991.98px) {
+    body main #cards{
+        grid-template-columns: auto auto;
+        grid-template-rows: 200px 200px 200px 200px;
+    }
 }
 
 /* Large devices (desktops, 992px and up)*/
