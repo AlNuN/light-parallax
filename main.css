@@ -74,7 +74,7 @@ body main {
     height: 555px;
 }
 
-body main article {
+body main #intro-text {
     height: 300px;
     width:100%;
     display: flex;
@@ -82,9 +82,33 @@ body main article {
     align-items: center;
 }
 
-body main article div{
+body main #intro-text div{
     width: 75%;
     text-align: center;
+}
+
+/* body main #cards{
+    padding: 10px 50px;
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: auto auto auto auto auto;
+    grid-template-rows: 200px 200px;
+    background-color: #f4f7f8;
+} */
+
+body main #cards {
+    padding: 10px auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    background-color: #f4f7f8;
+}
+
+body main #cards section {
+    height: 230px;
+    width: 280px;
+    background-color: #D0AE5E;
+    margin: 10px;
 }
 
 /* Footer 
