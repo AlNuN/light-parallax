@@ -1,5 +1,6 @@
-html, body {
+html, body, body main {
     height: 100%;
+    margin: 0;
 }
 
 body {
@@ -32,6 +33,7 @@ body header {
     align-items: center;
     justify-content: space-around;
     position: fixed;
+    z-index: 99999;
     top: 0;
 }
 
@@ -69,13 +71,27 @@ body main {
     margin-top: var(--header-height);
 }
 
-#first-img{
-    width: 100%;
-    height: 555px;
+.parallax-img{
+    position: relative;
+    height: 100%;
+    opacity: 0.9;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+#first-img {
+    background-image: url(img/bookshelve.jpeg)
+}
+
+#second-img {
+    background-image: url(img/bookshelve1.jpeg)
 }
 
 article.intro-text {
     height: 300px;
+    background-color: #FFFFFF;
 }
 
 .intro-text {
@@ -83,6 +99,7 @@ article.intro-text {
     display: flex;
     justify-content: center;
     align-items: center;
+    padding-bottom: 10px;
 }
 
 .intro-text div{
@@ -91,19 +108,22 @@ article.intro-text {
 }
 
 .cards-section{
- background-color: #f4f7f8;
+    padding-top: 50px;
+    background-color: #f4f7f8;
+    width: 100%;
 }
 
-.cards{
-    padding: 10px 50px;
-    display: grid;
-    grid-gap: 10px;
-    grid-template-columns: auto auto auto auto;
-    grid-template-rows: 200px 200px;
+#cards-container{
+    margin: 0 auto;
+    position: relative;
+    height: 400px;
 } 
 
-.cards section {
+#cards-container section {
+    position: absolute;
     background-color: #D0AE5E;
+    height: 180px;
+    width: 280px;
 }
 
 /* Footer 

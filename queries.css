@@ -5,12 +5,6 @@
     body header nav ul a {
         font-size: 20px;
     }
-
-    body main #cards{
-        grid-template-columns: auto;
-        grid-template-rows: 200px 200px 200px 200px 200px 200px 200px 200px;
-    }
-
 }
 
 /* Small devices (landscape phones, 576px and up)*/
@@ -18,20 +12,10 @@
     body header nav ul a {
         font-size: 20px;
     }
-
-    body main #cards{
-        grid-template-columns: auto auto;
-        grid-template-rows: 200px 200px 200px 200px;
-    }
-
 }
 
 /* Medium devices (tablets, 768px and up)*/
 @media (min-width: 768px) and (max-width: 991.98px) {
-    body main #cards{
-        grid-template-columns: auto auto;
-        grid-template-rows: 200px 200px 200px 200px;
-    }
 }
 
 /* Large devices (desktops, 992px and up)*/
