@@ -11,6 +11,10 @@
         height: 1800px;
         padding: 20px 20px;
     } 
+
+    #menu-button{
+        display: block;
+    }
 }
 
 /* Small devices (landscape phones, 576px and up)*/
@@ -24,6 +28,10 @@
         height: 900px;
         padding: 20px 20px;
     } 
+
+    #menu-button{
+        display: block;
+    }
 }
 
 /* Medium devices (tablets, 768px and up)*/
@@ -34,13 +42,15 @@
         height: 900px;
         padding: 20px 20px;
     } 
+    #side-bar{ display: none !important; /* hides the side bar at window on resize */ } 
 }
 
 /* Large devices (desktops, 992px and up)*/
 @media (min-width: 992px) and (max-width: 1199.98px) {
+    #side-bar{ display: none !important; }
 }
 
 /* Extra large devices (large desktops, 1200px and up)*/
 @media (min-width: 1200px) {
-
+    #side-bar{ display: none !important; }
 }

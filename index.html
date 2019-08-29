@@ -7,12 +7,6 @@
   <title>Pedro Henrique Feliciano</title>
   <link rel="stylesheet" type="text/css" href="main.css">
   <link rel="stylesheet" type="text/css" href="queries.css">
-
-  <!-- JQUERY -->
-  <script
-  src="https://code.jquery.com/jquery-3.4.1.min.js"
-  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
-  crossorigin="anonymous"></script>
 </head>
 <body>
 
@@ -22,27 +16,40 @@
         <a href="/"><img src="./img/icone.png" alt="icon"></a>
       </div>
 
-      <nav>
-        <ul>
-          <li>
-            <a href="/home">Home</a>
-          </li>
-          <li>
-            <a href="/sobre">Sobre</a>
-          </li>
-          <li>
-            <a href="/blog">Blog</a>
-          </li>
-          <li>
-            <a href="/contato">Contato</a>
-          </li>
-        </ul>
+      <nav id="navigation-bar">
+
+        <div id="horizontal-list"></div>
+
+        <button id="menu-button" onclick="sideMenu()">
+          <div></div>
+          <div></div>
+          <div></div>
+        </button>
+
       </nav>
+
+      <ul id="navigation-list">
+        <li>
+          <a href="/home">Home</a>
+        </li>
+        <li>
+          <a href="/sobre">Sobre</a>
+        </li>
+        <li>
+          <a href="/blog">Blog</a>
+        </li>
+        <li>
+          <a href="/contato">Contato</a>
+        </li>
+      </ul>
 
     </header>
 
+    <div id="side-bar"></div>
 
     <main>
+
+
       <div class="parallax-img" id="first-img"></div>
 
       <article class="intro-text">
@@ -77,7 +84,7 @@
       </article>
 
 
-      <footer></footer>
+      <footer>Matheus Alves Nunes - 2019</footer>
     </main>
 
 
